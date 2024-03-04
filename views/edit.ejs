@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit username</title>
+    <style>
+         
+        .centered {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+        }
+ 
+     </style>
+</head>
+<body>
+    <h2 class="centered">You are about to edit username : <%=user.email%></h2>
+
+    <form  class="centered" action="/user/<%=users.id%>?__method=PATCH" method="post">
+     <textarea name="username" > <%=user.username %> </textarea>
+     <input type="password" name="password" placeholder="enter password">
+     <button>Edit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new user</title>
+    <style>
+         
+        .centered {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+        }
+ 
+     </style>
+</head>
+<body>
+    
+    <h1 class="centered">Here to add new user</h1>
+
+    <form class="centered"  action="/user/new" method="post">
+        <input type="text" name="username" placeholder="Enter the username"> <br>
+        <input type="email" name="email" placeholder="Enter your email"> <br>
+        <input type="password" name="password" placeholder="Enter your new password"> <br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

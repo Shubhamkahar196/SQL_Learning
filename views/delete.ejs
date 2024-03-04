@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete user</title>
+    <style>
+         
+        .centered {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+        }
+ 
+     </style>
+</head>
+<body>
+    
+    <h3 class="centered ">TO delete this user : <%=user.email %> ,enter the password </h3>
+
+    <form class="centered " action="/user/<%=user.id%>?__method=DELETE" method="post">
+    <input type="password" name="password" placeholder="Enter password to delete">
+    <button>Delete</button>
+</form>
+</body>
+</html>
